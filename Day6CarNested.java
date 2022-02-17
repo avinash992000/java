@@ -1,4 +1,4 @@
-Name: Nadipalli Veera Venkata Avinash
+
 package day6;
 public class Car {
 String make;
