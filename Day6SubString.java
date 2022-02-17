@@ -1,3 +1,4 @@
+// You are using Java
 import java.util.Scanner;
 class SubString{
     
@@ -11,10 +12,19 @@ class SubString{
         Scanner sc = new Scanner(System.in);
         String s1 = sc.next();
         String rev = reverse(s1);
+        String rev1 = rev;
         int n = s1.length();
-        int len = rev.substring(n/2,n).length();
-        System.out.println(len);
-        //while(len<)
+        int i = n;
+        while(n>1){
+            rev1 +=rev;
+            n--;
+        }
+        int a = rev1.length();
+        int r = i/2+3;
+        if ((i/2+3)>a){
+            r = a;
+        }
+        System.out.println(rev1.substring(i/2,r));
         
         
     }
